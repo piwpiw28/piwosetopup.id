@@ -1,0 +1,179 @@
+
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Piwose Topup ML</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: linear-gradient(to bottom, #87CEFA, #ffffff);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .hero-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .hero-bg img {
+      position: absolute;
+      width: 400px;
+      opacity: 0;
+      animation: fadeSlide 3s ease-in-out forwards;
+    }
+
+    .hero-bg img:first-child {
+      left: 0;
+      top: 10%;
+    }
+
+    .hero-bg img:last-child {
+      right: 0;
+      bottom: 10%;
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeSlide {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 0.3;
+      }
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 80px auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .products, .payments {
+      margin-top: 20px;
+    }
+
+    .product-item, .promo-item {
+      padding: 10px;
+      margin: 5px 0;
+      background-color: #e6f0ff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .product-item:hover {
+      background-color: #cce0ff;
+    }
+
+    .payments img {
+      height: 25px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .wa-btn {
+      display: block;
+      margin-top: 20px;
+      background-color: #25d366;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .wa-btn:hover {
+      background-color: #1ebd5a;
+    }
+
+    .upload {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-bg">
+    <img src="https://i.ibb.co/5G1Qh4g/granger.png" alt="Granger">
+    <img src="https://i.ibb.co/YfXccyq/ling.png" alt="Ling">
+  </div>
+
+  <div class="container">
+    <h1>Piwose Topup MLBB</h1>
+    <input type="text" placeholder="Masukkan ID">
+    <input type="text" placeholder="Masukkan Server">
+    <input type="text" placeholder="Nickname (wajib)" required>
+
+    <div class="products">
+      <h2>Diamond Reguler</h2>
+      <div class="product-item">3 DM (1.200)</div>
+      <div class="product-item">5 DM (1.500)</div>
+      <div class="product-item">12 DM (6+6) (4.000)</div>
+      <div class="product-item">19 DM (5.000)</div>
+      <div class="product-item">28 DM (8.000)</div>
+      <div class="product-item">44 DM (12.000)</div>
+      <div class="product-item">59 DM (15.000)</div>
+      <div class="product-item">85 DM (22.000)</div>
+      <div class="product-item">170 DM (44.000)</div>
+      <div class="product-item">240 DM (62.000)</div>
+      <div class="product-item">296 DM (77.000)</div>
+      <div class="product-item">408 DM (105.000)</div>
+      <div class="product-item">568 DM (143.000)</div>
+      <div class="product-item">875 DM (219.000)</div>
+      <div class="product-item">2010 DM (478.000)</div>
+      <div class="product-item">4830 DM (1.150.000)</div>
+      <div class="product-item">5000 DM (1.250.000)</div>
+
+      <h2>Promo Double Top Up</h2>
+      <div class="promo-item">100 DM 50+50 (15.000)</div>
+      <div class="promo-item">300 DM 150+150 (43.500)</div>
+      <div class="promo-item">500 DM 250+250 (72.000)</div>
+      <div class="promo-item">1000 DM 500+500 (145.500)</div>
+
+      <h2>Weekly, Twilight, Starlight, Skin</h2>
+      <div class="product-item">Weekly Diamond Pass (25.000)</div>
+      <div class="product-item">Twilight Pass (150.000)</div>
+      <div class="product-item">Starlight Member (150.000)</div>
+      <div class="product-item">Skin Epic Promo (250.000)</div>
+    </div>
+
+    <div class="payments">
+      <h2>Metode Pembayaran</h2>
+      <div><img src="https://i.ibb.co/b3Fmr0L/bca.png" alt="BCA"> BCA (713-1559-104 a.n. Muhammad Rafly)</div>
+      <div><img src="https://i.ibb.co/0rF0wPt/dana.png" alt="DANA"> DANA (0856-9513-0509 a.n. Muhammad Rafly)</div>
+      <div><img src="https://i.ibb.co/Lp1HVmY/gopay.png" alt="GoPay"> GoPay (0813-1890-4068)</div>
+      <div><img src="https://i.ibb.co/LZsnzNH/shopeepay.png" alt="ShopeePay"> ShopeePay (0813-1890-4068)</div>
+    </div>
+
+    <div class="upload">
+      <label for="bukti">Kirim Bukti Pembayaran:</label>
+      <input type="file" id="bukti" accept="image/*">
+    </div>
+
+    <a class="wa-btn" href="https://wa.me/6281318904068?text=Min%20aku%20udah%20top%20up%20nih%20buktinya" target="_blank">Kirim ke WhatsApp</a>
+  </div>
+</body>
+</html>
